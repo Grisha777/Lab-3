@@ -1,46 +1,10 @@
-﻿#include <stdlib.h>
+#include <stdlib.h>
 #include <iostream>
+#include "Square.cpp"
+#include "Rectangle.cpp"
 using namespace std;
 
-class square // класс квадрат
-{
-protected:
-    double a;
-public:
-    square(double a) // инициализация поля 
-    {
-        this->a = a;
-    }
-    virtual double Perimeter() // Функция возвращает - периметр
-    {
-        return 4*a;
-    }
-    virtual void print()
-    {
-        cout << "a=" << a <<endl;
-        cout << "perimetr=" << rect->Perimeter() << endl;
 
-    }
-};
-
-class rectangle: public square // класс прямоугольник
-{
-    double b;
-public:
-    rectangle(double a, double b) : square(a)
-    {
-       this->b = b;
-    }
-    double Perimeter()// Функция возвращает - периметр
-    {
-        return 2*(a+b);
-    }
-   void print()
-    {
-       square::print();
-       cout << "b=" << b <<endl;
-    } 
-};
 
 int main(int argc, int* argv[])
 {
