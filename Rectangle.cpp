@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <iostream>
 #include "Square.cpp"
-using namespace std;
 
 class rectangle: public square // класс прямоугольник
 {
@@ -18,6 +17,6 @@ public:
    void print()
     {
        square::print();
-       cout << "b=" << b <<endl;
+       std::cout << "b=" << b <<endl;
     } 
 };
