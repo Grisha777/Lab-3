@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 class square // класс квадрат
 {
@@ -16,7 +15,7 @@ public:
     }
     virtual void print()
     {
-        cout << "a=" << a <<endl;
-        cout << "perimetr=" << Perimeter() << endl;
+        std::cout << "a=" << a <<endl;
+        std::cout << "perimetr=" << Perimeter() << endl;
     }
 };
