@@ -17,6 +17,6 @@ public:
     virtual void print()
     {
         cout << "a=" << a <<endl;
-        cout << "perimetr=" << rect->Perimeter() << endl;
+        cout << "perimetr=" << Perimeter() << endl;
     }
 };
